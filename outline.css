@@ -1,0 +1,32 @@
+.left-header{
+    position: absolute;
+    display: inline-block;
+    align-items: left;
+}
+
+.right-header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.form{
+    display: inline;
+}
+
+.search {
+    display: block;
+}
+
+.submit {
+    display: block;
+}
+
+.link {
+    display: inline-block;
+}
+
+.header {
+    position: relative;
+}

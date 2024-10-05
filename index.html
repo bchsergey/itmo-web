@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title lang="ru">Сайт-блог</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="блог, картинки, код, ascii, тексты">
+    <meta name="description" content="Сайт-блог">
+    <link rel="stylesheet" href="outline.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Название
+        </h1>
+        <div class="header">
+            <div class="left-header">
+                <nav>
+                    <div class="link">
+                        <a href="#pictures">Картинки</a>
+                    </div>
+                    <div class="link">
+                        <a href="#code">Код</a>
+                    </div>
+                    <div class="link">
+                        <a href="#texts">Тексты</a>
+                    </div>
+                    <div class="link">
+                        <a href="#asii">Ascii</a>
+                    </div>
+                    <div class="link">
+                        <a href="#contacts">Контакты</a>
+                    </div>
+                    <div class="link">
+                        <a href="#"><del>Удаленная часть</del></a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="right-header">
+                <nav>
+                    <a href="#successes"><strong>Успехи</strong></a>
+                    <a href="#failures"><em>Неудачи</em></a>
+                    <form>
+                        <input type="search" name="text" class="search" placeholder="Поиск">
+                        <input type="submit" name="submit" class="submit" value="Найти">
+                    </form>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section id="pictures" class="pictures">
+                <h3>Картинки 1</h3>
+                <img src="pic1.png" alt="картинка 1.1">
+                <img src="pic2.png" alt="картинка 1.2">
+                <img src="pic3.png" alt="картинка 1.3">
+                <p>Описание первых картинок</p>
+                <h4>Картинки 2</h4>
+                <img src="pic1.png" alt="картинка 2.1">
+                <img src="pic2.png" alt="картинка 2.2">
+                <img src="pic3.png" alt="картинка 2.3">
+                <p>Описание вторых картинок</p>
+            </section>
+            <section id="texts" class="texts">
+                <h3>Первый текст</h3>
+                <p>
+                    <b>Lorem </b><i>ipsum</i> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <h4>Второй текст</h4>
+                <p>
+                    <u>Lorem</u> <s>ipsum</s> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <blockquote>
+                    <b>Цитата:</b> Моя формула успеха это a<sub>2</sub> = b<sup>2</sup>
+                    <cite>Имя Фамилия</cite>
+                </blockquote>
+            </section>
+            <section id="code" class="code">
+                <h3>
+                    Секция с кодом
+                </h3>
+                <pre><code>
+                        for(let i = 0; i < 10; i++) {
+                            console.log("This is line " + i)
+                        }
+           
+                    </code></pre>
+            </section>
+            <section id="ascii" class="ascii">
+                <h3>ASCII картинка</h3>
+                <pre>
+                    ###### #    #   ##   #    # #####  #      ######
+                    #       #  #   #  #  ##  ## #    # #      #      
+                    #####    ##   #    # # ## # #    # #      ##### 
+                    #        ##   ###### #    # #####  #      #      
+                    #       #  #  #    # #    # #      #      #      
+                    ###### #    # #    # #    # #      ###### ######
+                </pre>
+            </section>
+            <section id="successes" class="successes">
+                <h4>Успехи</h4>
+                <ol>
+                    <li>Успех 1</li>
+                    <li>Успех 2</li>
+                    <li>Успех 3</li>
+                </ol>
+            </section>
+            <section id="failures" class="failures">
+                <h4>Неудачи</h4>
+                <ul>
+                    <li>Неудача 1</li>
+                    <li>Неудача 2</li>
+                    <li>Неудача 3</li>
+                </ul>
+            </section>
+        </article>
+        <aside>
+            <h2>Боковая секция</h2>
+            <p>Здесь могла быть ваша реклама</p>
+        </aside>
+    </main>
+    <footer>
+        <div id="contacts" class="contacts">
+            <h5>Наши контакты</h5>
+            <div>
+                <a href="#">
+                    <img src="vk.png" alt="ВК">
+                </a>
+                <a href="#">
+                    <img src="tg.png" alt="ТГ">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
