@@ -7,101 +7,125 @@
     <meta name="keywords" content="блог, картинки, код, ascii, тексты">
     <meta name="description" content="Сайт-блог">
     <link rel="stylesheet" href="outline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <h1>
-            Название
+            Визитка
         </h1>
-        <div class="header">
-            <div class="left-header">
-                <nav>
-                    <div class="link">
-                        <a href="#pictures">Картинки</a>
-                    </div>
-                    <div class="link">
-                        <a href="#code">Код</a>
-                    </div>
-                    <div class="link">
-                        <a href="#texts">Тексты</a>
-                    </div>
-                    <div class="link">
-                        <a href="#asii">Ascii</a>
-                    </div>
-                    <div class="link">
-                        <a href="#contacts">Контакты</a>
-                    </div>
-                    <div class="link">
-                        <a href="#"><del>Удаленная часть</del></a>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="right-header">
-                <nav>
-                    <a href="#successes"><strong>Успехи</strong></a>
-                    <a href="#failures"><em>Неудачи</em></a>
-                    <form>
-                        <input type="search" name="text" class="search" placeholder="Поиск">
-                        <input type="submit" name="submit" class="submit" value="Найти">
-                    </form>
-                </nav>
-            </div>
-        </div>
     </header>
+    <section class="nav-bar">
+        <nav>
+            <div class="nav-bar-part left-nav">
+                <ul>
+                    <li class="nav-link"><a href="#pictures">Картинки</a></li>
+                    <li class="nav-link"> <a href="#code">Код</a></li>
+                    <li class="nav-link"> <a href="#texts">Тексты</a></li>
+                    <li class="nav-link"> <a href="#asii">Ascii</a></li>
+                    <li class="nav-link"> <a href="#contacts">Контакты</a></li>
+                    <li class="nav-link"> <a href="#"><del>Удаленная часть</del></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <div class="nav-bar-part right-nav">
+                <ul>
+                    <li class="nav-link"><a href="#successes"><strong>Успехи</strong></a></li>
+                    <li class="nav-link"><a href="#failures"><em>Неудачи</em></a></li>
+                    <li class="nav-link form-link">
+                        <form>
+                            <input type="search" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="Найти">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
     <main>
-        <article>
-            <section id="pictures" class="pictures">
-                <h3>Картинки 1</h3>
-                <img src="pic1.png" alt="картинка 1.1">
-                <img src="pic2.png" alt="картинка 1.2">
-                <img src="pic3.png" alt="картинка 1.3">
-                <p>Описание первых картинок</p>
-                <h4>Картинки 2</h4>
-                <img src="pic1.png" alt="картинка 2.1">
-                <img src="pic2.png" alt="картинка 2.2">
-                <img src="pic3.png" alt="картинка 2.3">
-                <p>Описание вторых картинок</p>
+        <article class="wrap">
+            <section class="pictures wrap">
+                <div class="grid">
+                    <h3>Картинки</h3>
+                    <img class="image" src="img/art1.jpg" alt="картинка 1.1" title="сырок">
+                    <img class="image" src="img/art2.jpg" alt="картинка 1.2" title="вапорвейв">
+                    <img class="image" src="img/art4.jpg" alt="картинка 1.3" title="сосновый лес">
+                    <div class="grid-description">
+                        <p>Описание картинок</p>
+                    </div>
+                </div>
             </section>
-            <section id="texts" class="texts">
-                <h3>Первый текст</h3>
-                <p>
-                    <b>Lorem </b><i>ipsum</i> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <h4>Второй текст</h4>
-                <p>
-                    <u>Lorem</u> <s>ipsum</s> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <blockquote>
-                    <b>Цитата:</b> Моя формула успеха это a<sub>2</sub> = b<sup>2</sup>
-                    <cite>Имя Фамилия</cite>
-                </blockquote>
+            <section class="texts wrap">
+                <div class="texts-and-quoutes column wrap">
+                    <div class="texts">
+                        <div class="first-block column wrap">
+                            <h4>Первый текст</h4>
+                            <p class="text first-text">
+                                <b>Lorem </b><i>ipsum</i> dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi
+                                ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit
+                                esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt
+                                in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                        <div class="second-block column wrap">
+                            <h5>Второй текст</h5>
+                            <p class="text second-text">
+                                <u>Lorem</u> <s>ipsum</s> dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore
+                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris
+                                nisi
+                                ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit
+                                esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                                sunt
+                                in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+                        </div>
+                    </div>
+                    <blockquote>
+                        <b>Цитата:</b> Моя формула успеха это a<sub>2</sub> = b<sup>2</sup>
+                        <cite>Имя Фамилия</cite>
+                    </blockquote>
+                </div>
             </section>
-            <section id="code" class="code">
-                <h3>
-                    Секция с кодом
-                </h3>
-                <pre><code>
+            <div class="code-and-ascii row wrap">
+                <section class="code code column wrap">
+                    <h3>
+                        Секция с кодом
+                    </h3>
+                    <pre><code>
                         for(let i = 0; i < 10; i++) {
                             console.log("This is line " + i)
                         }
            
                     </code></pre>
-            </section>
-            <section id="ascii" class="ascii">
-                <h3>ASCII картинка</h3>
-                <pre>
+                </section>
+                <section class="ascii column wrap">
+                    <h3>ASCII картинка</h3>
+                    <pre>
                     ###### #    #   ##   #    # #####  #      ######
                     #       #  #   #  #  ##  ## #    # #      #      
                     #####    ##   #    # # ## # #    # #      ##### 
@@ -109,43 +133,58 @@
                     #       #  #  #    # #    # #      #      #      
                     ###### #    # #    # #    # #      ###### ######
                 </pre>
-            </section>
-            <section id="successes" class="successes">
-                <h4>Успехи</h4>
-                <ol>
-                    <li>Успех 1</li>
-                    <li>Успех 2</li>
-                    <li>Успех 3</li>
-                </ol>
-            </section>
-            <section id="failures" class="failures">
-                <h4>Неудачи</h4>
-                <ul>
-                    <li>Неудача 1</li>
-                    <li>Неудача 2</li>
-                    <li>Неудача 3</li>
-                </ul>
-            </section>
+                </section>
+            </div>
+            <div class="results row wrap">
+                <section class="successes">
+                    <h4>Успехи</h4>
+                    <ol>
+                        <li>Успех 1</li>
+                        <li>Успех 2</li>
+                        <li>Успех 3</li>
+                    </ol>
+                </section>
+                <section class="failures">
+                    <h4>Неудачи</h4>
+                    <ul>
+                        <li>Неудача 1</li>
+                        <li>Неудача 2</li>
+                        <li>Неудача 3</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="table-container">
+                <div class="table-row">
+                    <div class="table-item">1</div>
+                    <div class="table-item">1</div>
+                    <div class="table-item">1</div>
+                    <div class="table-item">1</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">2</div>
+                    <div class="table-item">2</div>
+                    <div class="table-item">2</div>
+                    <div class="table-item">2</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">3</div>
+                    <div class="table-item">3</div>
+                    <div class="table-item">3</div>
+                    <div class="table-item">3</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">4</div>
+                    <div class="table-item">4</div>
+                    <div class="table-item">4</div>
+                    <div class="table-item">4</div>
+                </div>
+            </div>
         </article>
         <aside>
             <h2>Боковая секция</h2>
             <p>Здесь могла быть ваша реклама</p>
         </aside>
     </main>
-    <footer>
-        <div id="contacts" class="contacts">
-            <h5>Наши контакты</h5>
-            <div>
-                <a href="#">
-                    <img src="vk.png" alt="ВК">
-                </a>
-                <a href="#">
-                    <img src="tg.png" alt="ТГ">
-                </a>
-            </div>
-        </div>
-    </footer>
-
 </body>
 
 </html>
