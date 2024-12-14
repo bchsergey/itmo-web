@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title lang="ru">Сайт-блог</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="блог, картинки, код, ascii, тексты">
+    <meta name="description" content="Сайт-блог">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Картинки
+        </h1>
+    </header>
+    <section class="nav-bar">
+        <nav>
+            <div class="nav-bar-part left-nav">
+                <ul>
+                    <li class="nav-link"><a href="../main/index.html">Главная страница</a></li>
+                    <li class="active-link"><a href="index.html">Картинки</a></li>
+                    <li class="nav-link"> <a href="../texts/index.html">Тексты</a></li>
+                    <li class="nav-link"> <a href="#"><del>Удаленная часть</del></a></li>
+                    <li class="nav-link"> <a href="../todo/index.html">ToDo List</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <div class="nav-bar-part right-nav">
+                <ul>
+                    <li class="nav-link"><a href="#successes"><strong>Успехи</strong></a></li>
+                    <li class="nav-link"><a href="#failures"><em>Неудачи</em></a></li>
+                    <li class="nav-link form-link">
+                        <form>
+                            <input type="search" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="Найти">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <article class="wrap" id="pictures">
+            <section class="pictures wrap">
+                <div class="grid">
+                    <h3>Картинки</h3>
+                    <img class="image" src="../../img/art1.jpg" alt="картинка 1.1" title="сырок">
+                    <img class="image" src="../../img/art2.jpg" alt="картинка 1.2" title="вапорвейв">
+                    <img class="image" src="../../img/art4.jpg" alt="картинка 1.3" title="сосновый лес">
+                    <div class="grid-description">
+                        <p>Описание картинок</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p id="load_time">
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+
+</body>
+
+</html>

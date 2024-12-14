@@ -1,0 +1,9 @@
+
+.pictures{
+    border: 5px dotted red;
+}
+
+
+.image {
+    filter: drop-shadow(20px 20px 10px rgb(95, 89, 89));
+}
