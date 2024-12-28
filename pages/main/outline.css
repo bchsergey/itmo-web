@@ -1,0 +1,88 @@
+.pictures{
+    border: 5px dotted red;
+}
+
+.texts{
+    display: flex;
+    position: relative;
+    border: 3px solid blue;
+}
+
+.image {
+    filter: drop-shadow(20px 20px 10px rgb(95, 89, 89));
+}
+
+.first-text{
+    font-size: 2vh;
+    line-height: 30px;
+    font-family: Verdana;
+    font-weight: 700;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.second-text{
+    background-color: rgb(48, 5, 13);
+    color: rgb(192, 203, 212);
+    padding: 1rem;
+    margin: 1rem;
+    white-space: inherit;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+aside {
+    background-color: blueviolet;
+    float: right;
+    width: 50%;
+    height: 100%;
+    aside { float:right; }
+}
+
+.texts{
+    display: flex
+}
+
+.results{
+    display: flex;
+}
+
+.contacts {
+    width: 80%;
+    padding: 0 15vh
+}
+
+
+.contacts-links{
+    display: flex;
+    padding: 0 50vh
+}
+
+
+
+.table-container {
+    margin: 0;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(242, 203, 212, 0.5); 
+}
+
+.table-row, .table-header {
+    display: contents;
+    background-color: lightblue;
+}
+
+.table-row:nth-child(even) .table-item {
+	background-color:  rgb(0, 100, 100, 0.5); ;
+}
+
+
+.table-row .table-item, .table-header .header-item{
+    margin: 0;
+    border: 1px solid black;
+
+}
+
+.table-header .header-item{
+    color: black;
+}

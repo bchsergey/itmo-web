@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="outline.css">
+    <meta charset="UTF-8">
+    <title>Сайт-блог</title>
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1>
+                Здесь будет располагаться ToDo List в 5 лабораторной
+            </h1>
+        </header>
+        <section class="nav-bar">
+            <nav>
+                <div class="nav-bar-part left-nav">
+                    <ul>
+                        <li class="nav-link"><a href="../main/index.html">Главная страница</a></li>
+                        <li class="nav-link"><a href="../gallery/index.html">Картинки</a></li>
+                        <li class="nav-link"> <a href="../texts/index.html">Тексты</a></li>
+                        <li class="nav-link"> <a href="#"><del>Удаленная часть</del></a></li>
+                        <li class="nav-link"> <a href="index.html">ToDo List</a></li>
+                        <li class="nav-link"> <a href="../posts/index.html">Посты</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <div class="editable">
+            <script src="todo.js"></script>
+            <h2>Таблица</h2>
+            <p>Введите размеры:</p>
+
+            <select id="choice" onchange="saveDays(value)">
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <script type="text/javascript">
+            </script>
+
+            <p>Введите число пар в день:</p>
+            <select id="choice" onchange="saveLessons(value)">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+
+            <button id="button" onclick="saveDaysLessons()">Показать таблицу</button>
+            <p id="demo"></p>
+
+            <div class="table-name">Расписание</div>
+            <form name="tablegen">
+                <input class="table-button" type="button" value="Сохранить расписание" onclick='saveTable();' />
+                <input class="table-button" type="button" value="Загрузить расписание" onclick='loadTable();' />
+            </form>
+
+            <div id="wrapper"></div>
+        </div>
+    </main>
+
+    <script src="../../scripts/main.js"></script>
+</body>
+
+
+</html>

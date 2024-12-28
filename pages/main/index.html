@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title lang="ru">Сайт-блог</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="блог, картинки, код, ascii, тексты">
+    <meta name="description" content="Сайт-блог">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Визитка
+        </h1>
+    </header>
+    <section class="nav-bar">
+        <nav>
+            <div class="nav-bar-part left-nav">
+                <ul>
+                    <li class="nav-link"><a href="index.html">Главная страница</a></li>
+                    <li class="nav-link"><a href="../gallery/index.html">Картинки</a></li>
+                    <li class="nav-link"> <a href="../texts/index.html">Тексты</a></li>
+                    <li class="nav-link"> <a href="#"><del>Удаленная часть</del></a></li>
+                    <li class="nav-link"> <a href="../todo/index.html">ToDo List</a></li>
+                    <li class="nav-link"> <a href="../posts/index.html">Посты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <div class="nav-bar-part right-nav">
+                <ul>
+                    <li class="nav-link"><a href="#successes"><strong>Успехи</strong></a></li>
+                    <li class="nav-link"><a href="#failures"><em>Неудачи</em></a></li>
+                    <li class="nav-link form-link">
+                        <form>
+                            <input type="search" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="Найти">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <article class="wrap">
+            <div class="code-and-ascii row wrap" id="code">
+                <section class="code code column wrap">
+                    <h3>
+                        Секция с кодом
+                    </h3>
+                    <pre><code>
+                        for(let i = 0; i < 10; i++) {
+                            console.log("This is line " + i)
+                        }
+           
+                    </code></pre>
+                </section>
+                <section class="ascii column wrap" id="ascii">
+                    <h3>ASCII картинка</h3>
+                    <pre>
+                    ###### #    #   ##   #    # #####  #      ######
+                    #       #  #   #  #  ##  ## #    # #      #      
+                    #####    ##   #    # # ## # #    # #      ##### 
+                    #        ##   ###### #    # #####  #      #      
+                    #       #  #  #    # #    # #      #      #      
+                    ###### #    # #    # #    # #      ###### ######
+                </pre>
+                </section>
+            </div>
+            <div class="results row wrap">
+                <section class="successes" id="successes">
+                    <h4>Успехи</h4>
+                    <ol>
+                        <li>Успех 1</li>
+                        <li>Успех 2</li>
+                        <li>Успех 3</li>
+                    </ol>
+                </section>
+                <section class="failures" id="failures">
+                    <h4>Неудачи</h4>
+                    <ul>
+                        <li>Неудача 1</li>
+                        <li>Неудача 2</li>
+                        <li>Неудача 3</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="table-name">Доска почета</div>
+            <div class="table-container">
+                <div class="table-header">
+                    <div class="header-item">Фамилия</div>
+                    <div class="header-item">Имя</div>
+                    <div class="header-item">Отчество</div>
+                    <div class="header-item">Возраст</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">Иванов</div>
+                    <div class="table-item">Иван</div>
+                    <div class="table-item">Иванович</div>
+                    <div class="table-item">20</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">Петров</div>
+                    <div class="table-item">Петр</div>
+                    <div class="table-item">Петрович</div>
+                    <div class="table-item">21</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">Дмитриев</div>
+                    <div class="table-item">Дмитрий</div>
+                    <div class="table-item">Дмитриевич</div>
+                    <div class="table-item">22</div>
+                </div>
+                <div class="table-row">
+                    <div class="table-item">Сергеев</div>
+                    <div class="table-item">Сергей</div>
+                    <div class="table-item">Сергеевич</div>
+                    <div class="table-item">23</div>
+                </div>
+            </div>
+        </article>
+        <aside>
+            <h2>Боковая секция</h2>
+            <p>Здесь могла быть ваша реклама</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p id="load_time">
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+</body>
+
+
+
+</html>

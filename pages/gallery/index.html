@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title lang="ru">Сайт-блог</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="блог, картинки, код, ascii, тексты">
+    <meta name="description" content="Сайт-блог">
+    <link rel="stylesheet" href="outline.css">
+    <link rel="stylesheet" href="../../main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Ссылка на стиль из swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+
+
+<body>
+    <header>
+        <h1>
+            Картинки
+        </h1>
+    </header>
+    <section class="nav-bar">
+        <nav>
+            <div class="nav-bar-part left-nav">
+                <ul>
+                    <li class="nav-link"><a href="../main/index.html">Главная страница</a></li>
+                    <li class="active-link"><a href="index.html">Картинки</a></li>
+                    <li class="nav-link"> <a href="../texts/index.html">Тексты</a></li>
+                    <li class="nav-link"> <a href="#"><del>Удаленная часть</del></a></li>
+                    <li class="nav-link"> <a href="../todo/index.html">ToDo List</a></li>
+                    <li class="nav-link"> <a href="../posts/index.html">Посты</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav>
+            <div class="nav-bar-part right-nav">
+                <ul>
+                    <li class="nav-link"><a href="#successes"><strong>Успехи</strong></a></li>
+                    <li class="nav-link"><a href="#failures"><em>Неудачи</em></a></li>
+                    <li class="nav-link form-link">
+                        <form>
+                            <input type="search" name="text" class="search" placeholder="Поиск">
+                            <input type="submit" name="submit" class="submit" value="Найти">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    сырок<img class="image" src="../../img/art1.jpg" alt="картинка 1.1" title="сырок">
+                </div>
+                <div class="swiper-slide">
+                    вапорвейв<img class="image" src="../../img/art2.jpg" alt="картинка 1.2" title="вапорвейв">
+                </div>
+                <div class="swiper-slide">
+                    сосновый лес<img class="image" src="../../img/art4.jpg" alt="картинка 1.3" title="сосновый лес">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="gallery.js" defer></script>
+
+    </main>
+
+    <footer>
+        <p id="load_time">
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+
+</body>
+
+</html>
