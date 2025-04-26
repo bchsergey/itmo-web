@@ -1,17 +1,15 @@
-option, button {
-    background-color: transparent; 
+
+#daysChoice, #lessonsChoice, option, button {
+    color: black;
 }
 
-option {
-    color: blue;
+#wrapper {
+    width: 50%;
 }
-
-
 .table-container {
     margin: 0;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(242, 203, 212, 0.5); 
+    display: grid;
+    background-color: rgba(242, 203, 212, 0.5);
 }
 
 .table-row, .table-header {
@@ -20,37 +18,66 @@ option {
 }
 
 .table-row:nth-child(even) .table-item {
-	background-color:  rgb(0, 100, 100, 0.5); ;
+    background-color: rgba(0, 100, 100, 0.5);
 }
 
-
-.table-row .table-item, .table-header .header-item{
+.table-row .table-item, .table-header .header-item {
     margin: 0;
     border: 1px solid black;
-
 }
 
-.table-header .header-item{
+.table-header .header-item {
     color: black;
 }
 
 td {
-    width: 100;
+    width: 100px;
 }
 
 main {
     display: flex;
-    flex-direction: column 
+    flex-direction: column;
 }
 
-#choice{
+#choice {
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #ccc;
 }
 
+.select {
+    background-color: transparent;
+}
+
+.table-button {
+    border: 1px solid #ccc;
+}
+
+.table-row, .table-header {
+    display: contents;
+    background-color: lightblue;
+}
+
+.table-row:nth-child(even) .table-item {
+    background-color: rgba(0, 100, 100, 0.5);
+}
+
+.table-row .table-item, .table-header .header-item {
+    margin: 0;
+    border: 1px solid black;
+}
+
+.table-header .header-item {
+    color: black;
+}
+
+
+#choice {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #ccc;
+}
 
 .select {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .table-button {

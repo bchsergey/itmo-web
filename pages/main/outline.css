@@ -1,8 +1,29 @@
-.pictures{
+body {
+    max-height: 100%;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(5, 13, 44, 0.7), rgba(5, 13, 44, 0.7)), url("../../img/header.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+main article {
+    flex: 3;
+    padding: 1rem;
+}
+
+aside {
+    flex: 1;
+    background-color: blueviolet;
+    padding: 1rem;
+}
+
+.pictures {
     border: 5px dotted red;
 }
 
-.texts{
+.texts {
     display: flex;
     position: relative;
     border: 3px solid blue;
@@ -12,59 +33,30 @@
     filter: drop-shadow(20px 20px 10px rgb(95, 89, 89));
 }
 
-.first-text{
-    font-size: 2vh;
-    line-height: 30px;
-    font-family: Verdana;
-    font-weight: 700;
-    text-align: right;
-    vertical-align: middle;
+.texts {
+    display: flex;
 }
 
-.second-text{
-    background-color: rgb(48, 5, 13);
-    color: rgb(192, 203, 212);
-    padding: 1rem;
-    margin: 1rem;
-    white-space: inherit;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-
-aside {
-    background-color: blueviolet;
-    float: right;
-    width: 50%;
-    height: 100%;
-    aside { float:right; }
-}
-
-.texts{
-    display: flex
-}
-
-.results{
+.results {
     display: flex;
 }
 
 .contacts {
     width: 80%;
-    padding: 0 15vh
+    padding: 0 15vh;
 }
 
-
-.contacts-links{
+.contacts-links {
     display: flex;
-    padding: 0 50vh
+    padding: 0 50vh;
 }
-
-
 
 .table-container {
-    margin: 0;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-    background-color: rgb(242, 203, 212, 0.5); 
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgba(242, 203, 212, 0.5);
+    overflow-x: auto;
 }
 
 .table-row, .table-header {
@@ -73,16 +65,28 @@ aside {
 }
 
 .table-row:nth-child(even) .table-item {
-	background-color:  rgb(0, 100, 100, 0.5); ;
+    background-color: rgba(0, 100, 100, 0.5);
 }
 
-
-.table-row .table-item, .table-header .header-item{
+.table-row .table-item, .table-header .header-item {
     margin: 0;
     border: 1px solid black;
-
 }
 
-.table-header .header-item{
+.table-header .header-item {
     color: black;
+}
+
+@media screen and (width <= 400px) {
+    .text {
+        font-size: vh;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    main article, aside {
+        flex: 1 1 100%;
+    }
 }

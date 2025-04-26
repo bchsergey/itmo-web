@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <link rel="stylesheet" href="../../main.css">
     <link rel="stylesheet" href="outline.css">
     <meta charset="UTF-8">
-    <title>Сайт-блог</title>
+    <title>ToDo List</title>
 </head>
-
 <body>
     <main>
-
         <header>
             <h1>
                 Здесь будет располагаться ToDo List в 5 лабораторной
@@ -29,44 +26,48 @@
                     </ul>
                 </div>
             </nav>
+
+            <nav>
+                <div class="nav-bar-part right-nav">
+                    <ul>
+                        <li class="nav-link"><a href="../main/index.html#successes"><strong>Успехи</strong></a></li>
+                        <li class="nav-link"><a href="../main/index.html#failures"><em>Неудачи</em></a></li>
+                        <li class="nav-link form-link">
+                            <form>
+                                <input type="search" name="text" class="search" placeholder="Поиск">
+                                <input type="submit" name="submit" class="submit" value="Найти">
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </section>
 
         <div class="editable">
-            <script src="todo.js"></script>
             <h2>Таблица</h2>
-            <p>Введите размеры:</p>
-
-            <select id="choice" onchange="saveDays(value)">
+            <p>Введите количество дней:</p>
+            <select id="daysChoice" onchange="saveDays(this.value)">
                 <option value="5">5</option>
                 <option value="6">6</option>
+                <option value="7">7</option>
             </select>
-            <script type="text/javascript">
-            </script>
 
-            <p>Введите число пар в день:</p>
-            <select id="choice" onchange="saveLessons(value)">
+            <p>Введите количество пар в день:</p>
+            <select id="lessonsChoice" onchange="saveLessons(this.value)">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
             </select>
 
+            <button id="showButton" onclick="clearTable()">Очистить таблицу</button>
 
-            <button id="button" onclick="saveDaysLessons()">Показать таблицу</button>
             <p id="demo"></p>
-
-            <div class="table-name">Расписание</div>
-            <form name="tablegen">
-                <input class="table-button" type="button" value="Сохранить расписание" onclick='saveTable();' />
-                <input class="table-button" type="button" value="Загрузить расписание" onclick='loadTable();' />
-            </form>
 
             <div id="wrapper"></div>
         </div>
     </main>
 
-    <script src="../../scripts/main.js"></script>
+    <script src="script.js"></script>
 </body>
-
-
 </html>
